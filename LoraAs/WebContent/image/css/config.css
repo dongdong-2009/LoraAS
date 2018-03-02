@@ -1,0 +1,235 @@
+@CHARSET "UTF-8";
+/* css初始化 */
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body,div,p,h,a,span{
+			font-size: 12px;
+			font-family: "宋体";
+		}
+		a{
+			text-decoration: none;
+		}
+		input{
+			border: 0 none;/* 去边框 */
+			outline-style: none;/* 去轮廓线 */
+		}
+
+		ul{
+			list-style: none;
+		}
+
+.header{
+			width: 75%;
+			height: 62px;
+			margin: 0 auto;
+			overflow: hidden;     /* 外边距塌陷 */
+		}
+
+.logo{
+			height: 62px;
+			width: 70px;
+			margin-top: 10px;
+			float: left;
+		}
+.word{
+	height: 62px;
+	margin-top:28px;
+	float: left;
+	text-align: center;
+}
+
+.word p{
+	font-size:30px;
+	font-family: "宋体";
+	font-weight: bold;
+	
+}
+	.serch{
+			float: right;
+			margin-top: 30px;
+			border: 1px solid #e1e1e1;
+
+		}
+		.serch-txt{
+			width: 164px;
+			height: 28px;
+			float: left;
+		}
+		.serch .btn{
+			height: 28px;
+			width: 30px;
+			float: left;
+			background: url('../image/search2.jpg')
+		}
+.ip_time{
+	width: 1350px;
+	height: 94px;
+	overflow: hidden;
+	
+}
+.ip_table{
+	float: right;
+}
+/* 导航部分开始  */
+		.nav{
+			height: 55px;
+			border-top: 1px solid  #e1e1e1;
+			background: url('../image/nav_bg.png');
+			margin-top: 30px;
+		}
+		.nav ul{
+			margin-left: 185px;
+		}
+		.nav li{
+		    width: 16%;
+			float: left;
+			height: 55px;
+			background: url('../image/nav_bg-line.png') no-repeat right top;
+			line-height: 55px;
+		}
+		.nav a{
+			height: 55px;
+			display: inline-block;
+			padding: 0 30%;
+			color: black;
+			font-weight: 700px;
+		}
+		.nav a:hover{
+			color: green;
+		}
+		/* 导航部分结束 */
+		
+		
+/*主体部分开始*/
+	.content{
+		width:80%;
+		height: 60%;
+		margin: 0 auto;
+	}
+/*主体部分结束*/
+		
+/*左侧导航栏开始*/
+.left_content{
+	height:500px;
+	width:20%;
+	position:relative;
+	float:left;
+}
+
+	
+.left_content{
+			width: 20%;
+			height: 224px;
+			border: 0px solid #e4e4e4;
+			float: left;
+			margin-left: 12px;
+			margin: 0 auto;
+			margin-top: 30px;
+
+		}
+.left_content li{
+			height: 27px;
+			line-height: 27px;
+			border-bottom: 1px dashed #dcdcdc;
+		}
+.left_content ul{
+			margin-top: 10px;
+			margin-left: 23px;
+			margin-right: 18px;
+		}
+.left_content a{
+			color: #666;
+		}
+a.fcolor{
+			color: red;
+			font-weight: 900;
+		}
+.left_content a:hover{
+			color: #7ab800;
+		}
+
+		
+
+
+/*左侧导航栏结束*/
+		
+		
+	/* 数据展示表格栏开始*/
+
+
+
+.container{
+	padding-top:20px;
+	width:960px;
+	
+	background:url(../image/body.jpg);
+	background-repeat:repeat;
+	color:#fff;
+	letter-spacing:1px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	position:relative;
+	margin-left: 25%;
+}
+.data caption{
+	font-size:20px;
+	font-weight:normal;
+	background:url(../image/zebratable.png);
+	background-repeat:no-repeat;
+	background-position: 30% center;
+	padding-top: 20px;
+	height:50px;
+	color: white;
+	}
+	
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+	width:100%;
+	-webkit-box-shadow:  0px 2px 1px 5px rgba(242, 242, 242, 0.1);
+    box-shadow:  0px 2px 1px 5px rgba(242, 242, 242, 0.1);
+}
+
+.data {
+    border: 1px solid #555;
+}
+
+.data td {
+    border-left: 1px solid #555;
+    border-top: 1px solid #555;
+    padding: 10px;
+    text-align: left;    
+}
+
+.data th, .data th:hover {
+    border-left: 1px solid #555;
+	border-bottom: 1px solid #828282;
+    padding: 20px;  
+    background-color:#151515 !important;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#151515), to(#404040)) !important;
+    background-image: -webkit-linear-gradient(top, #151515, #404040) !important;
+    background-image:    -moz-linear-gradient(top, #151515, #404040) !important;
+    background-image:     -ms-linear-gradient(top, #151515, #404040) !important;
+    background-image:      -o-linear-gradient(top, #151515, #404040) !important;
+    background-image:         linear-gradient(top, #151515, #404040) !important;
+	color:#fff !important;
+	font-weight:normal;
+}
+
+.data tbody tr:nth-child(even) {
+    background: #000 !important;
+	color:#fff;
+}
+
+.data tr:hover *{
+    background: #eeeeee;
+	color:#000;
+}
+
+.data tr {
+	background:#404040;
+	color:#fff;
+}
+
+/* 数据展示表格栏结束*/

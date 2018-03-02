@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="Nankai.domain">
+    <!-- 配置主键 -->
+    <class name="gateway" table="gateway">
+        <id name="gwid">
+       		 <generator class="native"></generator>
+  		 </id>
+    <!-- property元素:除id之外的普通属性映射
+				name: 填写属性名
+				column(可选): 填写列名
+				type(可选):填写列(属性)的类型.hibernate会自动检测实体的属性类型.
+						每个类型有三种填法: java类型|hibernate类型|数据库类型
+				not-null(可选):配置该属性(列)是否不能为空. 默认值:false
+				length(可选):配置数据库中列的长度. 默认值:使用数据库类型的最大长度
+	 -->
+	 <property name="gweui" column="GwEUI"></property>
+	 <property name="lastfrm" column="LastFRM"></property>
+	 <property name="skey" column="SKEY"></property>
+	 <property name="lat" column="Lat"></property>
+	 <property name="longi" column="Longi"></property>
+	 <property name="alt" column="Alt"></property>
+	 <property name="temp" column="Temp"></property>
+	 <property name="batt" column="Batt"></property>
+	 <property name="isOnline" column="IsOnline"></property>
+	 <property name="isValid" column="IsValid"></property>
+    </class>
+    
+    
+    
+</hibernate-mapping>
